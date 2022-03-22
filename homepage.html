@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>home page</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">download</a></li>
+            <li><a href="index.html">Logout</a></li>
+            <li><a href="registration.html">Register</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!--upload files-->
+        <div class="uploading">
+           <h1>Upload pdf</h1>
+            <form name="pdfupload" method="post" >
+                <label for="pdf1">Choose your pdf file1:</label>
+                <input type="file" name="pdf1" id="pdf1">
+                <br>
+                <label for="pdf2">Choose your pdf file 2:</label>
+                <input type="file" name="pdf2" id="pdf2"><br>
+                <input type="button" value="submit" onclick=pdfUpload()>
+        
+            </form>
+        </div>
+       
+        <!--view uploaded files-->
+        <div class="viewuploadfiles">
+            <h1>View files</h1>
+           
+            <table>
+                <tr>
+                    <th>File1</th>
+                     
+                    <th>File2</th>
+
+                </tr>
+                <tr>
+                    <td id="showfile1"></td>
+                    <td id="showfile2"></td>
+                </tr>
+                
+            </table>
+        </div>
+       
+        <!--dowload pdf -->
+        <div class="downloadfiles">
+             <h1>Download Pdf</h1>
+            <a href="C:\fakepath\90 OTS SBI.pdf" id="down1" download>Download pdf1 file</a>
+            <a href="C:\fakepath\5_6156517907200214188 (1).pdf" id="down2" download>Download pdf2 file</a>
+            <!--downloaded merged files-->
+            <h1>Download Merged pdf</h1>
+            
+            <a href="C:\fakepath\5_6156517907200214188 (1).pdf" id="down3" download>Merged pdf download</a>
+        </div>
+        <br>
+       
+
+    </section>
+    
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

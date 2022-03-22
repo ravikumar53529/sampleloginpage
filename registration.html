@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--registration-->
+    <div class="container">
+        <form name="formreg" method="post">
+            <label for="username">Username</label><br>
+            <input type="text"name="regname" id="username" required="">
+            <br>
+            <label for="phonumber">PhoneNumber</label><br>
+            <input type="number" name="regnum" id="phone" required="">
+            <br>
+            <br>
+            <a href="index.html" id="anchor">Loginpage</a> 
+            <input type="button" class="regbut" value="Register" onclick="myReg()">
+            <input type="reset" class="reset">
+        </form>
+    </div>
+    <script src="script.js"></script>
+     
+</body>
+
+</html>
